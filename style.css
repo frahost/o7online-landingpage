@@ -98,6 +98,42 @@ h2 {
 .feature h3 { color: #e8f4ff; font-size: 1rem; margin-bottom: .5rem; }
 .feature p  { color: #9ab4cc; font-size: .9rem; }
 
+.devlog-entry {
+  display: flex;
+  gap: 1.2rem;
+  background: #0d1f3c;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.devlog-entry img {
+  width: 14rem;
+  height: auto;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid #1e3a5f;
+}
+
+.devlog-datum {
+  font-size: .75rem;
+  color: #4a7a9a;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-bottom: .3rem;
+}
+
+.devlog-text h3 { color: #e8f4ff; font-size: 1rem; margin-bottom: .5rem; }
+.devlog-text ul { list-style: none; display: flex; flex-direction: column; gap: .35rem; }
+.devlog-text li { color: #9ab4cc; font-size: .9rem; padding-left: 1rem; position: relative; }
+.devlog-text li::before { content: '–'; position: absolute; left: 0; color: #4a7a9a; }
+
+@media (max-width: 600px) {
+  .devlog-entry { flex-direction: column; }
+  .devlog-entry img { width: 100%; }
+}
+
 .stack-list {
   list-style: none;
   display: flex;
